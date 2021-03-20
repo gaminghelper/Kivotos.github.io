@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="euc-kr"/>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>서비스 업데이트 내역</title>
+        <!-- 제이쿼리 모바일, 제이쿼리 라이브러리 화일 -->
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>  
+<body>
+  <div data-role="page" id="page1">
+	<div data-role="header" data-position="fixed" data-theme="b">
+		<a href="#" data-icon="back" data-rel="back">Back</a>
+		<h1>서비스 업데이트 내역</h1>
+		<a href="main.php" data-icon="home" data-iconpos="notext">Home</a>
+	</div>
+	<div data-role="content">
+		<form name="form1" method="post" enctype="multipart/form-data" action="insert_result.php" data-ajax="false"> 
+			<div class="ui-body ui-body-a">
+				<label class="select"><h1>2020.11.7</h1></label>	
+				<label class="select">신 이벤트 계산 정보 추가<br>
+				이벤트 계산기에서 기록되지 않은 세계에 이벤트 포인트를 계산할 수 있게하였습니다.
+				</label>
+            </div>
+			<div class="ui-body ui-body-a">
+				<label class="select"><h1>2020.10.8</h1></label>	
+				<label class="select">신 이벤트 계산 정보 추가<br>
+				이벤트 계산기에서 서큐버스 카페에 어서오세요 이벤트 포인트를 계산할 수 있게하였습니다.
+				</label>
+            </div>
+			<div class="ui-body ui-body-a">
+				<label class="select"><h1>2020.09.26</h1></label>	
+				<label class="select">신 이벤트 로드맵 계산 정보 추가<br>
+				이벤트 계산기에서 로드맵 이벤트 포인트를 계산할 수 있게하였습니다.
+				또한 경험치 계산기 테이블이 바뀜으로 인해 테이블 조사가 완료될때까지 계산기를 막아뒀습니다.
+				</label>
+            </div>
+			<div class="ui-body ui-body-a">
+				<label class="select"><h1>2020.09.11</h1></label>	
+				<label class="select">신 이벤트 라제국 계산 정보 추가<br>
+				이벤트 계산기에서 라제국 이벤트 포인트를 계산할 수 있게하였습니다.
+				</label>
+            </div>
+			<div class="ui-body ui-body-a">
+				<label class="select"><h1>2020.08.30</h1></label>	
+				<label class="select">이벤트 계산 수정<br>
+				이벤트 계산기에서 PVP 최대 포인트 옵션에서 하루 콜로세움 횟수를 7회에서 9회로 수정하였습니다.<br>
+				또한 이벤트 포인트 계산에서 계산상 잘못된 부분을 수정하였습니다.(커피 소모하지 않음으로 인한 계산 오차 수정)
+				</label>
+            </div>
+			<div class="ui-body ui-body-a">
+				<label class="select"><h1>2020.08.27</h1></label>	
+				<label class="select">신 이벤트 옛날옛적에 계산 정보 추가<br>
+				이벤트 계산기에서 옛날옛적에 포인트를 계산할 수 있게하였습니다.<br>
+				또한 이번 이벤트부터 이벤트균열을 플레이 할 시 커피를 소모하지 않아 포인트 계산 방식을 수정하였습니다.
+				</label>
+            </div>
+			<div class="ui-body ui-body-a">
+				<label class="select"><h1>2020.08.22</h1></label>	
+				<label class="select">이벤트 계산 수정<br>
+				이벤트 계산기에서 교환비 항목을 없애고 버튼 형식으로 만들어 쉽게 계산할 수 있도록 하였습니다.<br>
+				</label>
+            </div>
+			<div class="ui-body ui-body-a">
+				<label class="select"><h1>2020.08.21</h1></label>	
+				<label class="select">이벤트 계산 정보 추가<br>
+				이벤트 계산기에서 PVP 최대 포인트 항목과 교환비에 대한 설명을 추가하였습니다.<br>
+				</label>
+            </div>
+			<div class="ui-body ui-body-a">
+				<label class="select"><h1>2020.08.14</h1></label>	
+				<label class="select">이벤트 계산 정보 추가<br>
+				이벤트 계산기에서 균열 총합 퍼센트 선택 폭이 늘었습니다.<br>
+				</label>
+            </div>
+			<div class="ui-body ui-body-a">
+				<label class="select"><h1>2020.08.13</h1></label>	
+				<label class="select">신 이벤트 베리우드 계산 정보 추가<br>
+				이벤트 계산기에서 베리우드 포인트를 계산할 수 있게하였습니다.<br>
+				또한 경험치 계산기를 추가하였습니다.
+				</label>
+            </div>
+			<div class="ui-body ui-body-a">
+				<label class="select"><h1>2020.08.12</h1></label>	
+				<label class="select">가디언테일즈 이벤트 계산기 수정<br>
+				이벤트 계산기에서 오류가 생기는 부분 계산값이 NaN이나 잘못된 값이 나오는 부분등을 수정하였습니다.
+				<br> 또한 계산 결과 포인트 최종 점수를 확인할 수 있게하였습니다.
+				</label>
+            </div>
+			<div class="ui-body ui-body-a">
+				<label class="select"><h1>2020.08.08</h1></label>	
+				<label class="select">가디언테일즈 이벤트 계산기 수정 및 무한로딩 대처법<br>
+				이벤트 계산기에서 금일 균열을 돌았는지에 대한 여부를 체크할 수 있습니다.
+				<br>
+				또한 메인페이지에서 무한 로딩 문제가 생겼을 경우 "사용시 문제가 생겼을 경우"를 눌러서 확인해 주세요.
+				</label>
+            </div>
+			<div class="ui-body ui-body-a">
+				<label class="select"><h1>2020.08.07</h1></label>	
+				<label class="select">가디언테일즈 계산기 베타 서비스 공개 <br>
+				닷홈(dothome) 무료 서버 제공 서비스를 기반으로 하여 사이트 이용시 불편한 점이 있을 수 있습니다. 아무쪼록 양해바랍니다.
+				</label>
+            </div>
+			<div class="ui-body">
+			</div>
+		</form> 
+	</div>
+	<div data-role="footer" data-position="fixed" data-theme="b">
+	</div>
+  </div>
+</body>
+</html>

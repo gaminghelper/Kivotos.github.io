@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="euc-kr"/>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>서비스 업데이트 내역</title>
+        <!-- 제이쿼리 모바일, 제이쿼리 라이브러리 화일 -->
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>  
+<body>
+  <div data-role="page" id="page1">
+	<div data-role="header" data-position="fixed" data-theme="b">
+		<a href="#" data-icon="back" data-rel="back">Back</a>
+		<h1>서비스 업데이트 내역</h1>
+		<a href="main.php" data-icon="home" data-iconpos="notext">Home</a>
+	</div>
+	<div data-role="content">
+		<form name="form1" method="post" enctype="multipart/form-data" action="insert_result.php" data-ajax="false"> 
+			<div class="ui-body ui-body-a">
+				<label class="select"><h1>2021.03.20</h1></label>	
+				<label class="select">제목<br>
+				내용
+				</label>
+            </div>
+			<div class="ui-body">
+			</div>
+		</form> 
+	</div>
+	<div data-role="footer" data-position="fixed" data-theme="b">
+	</div>
+  </div>
+</body>
+</html>
