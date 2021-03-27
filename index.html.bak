@@ -36,8 +36,8 @@
 			<!--<img style="margin: 20px auto; display: block;" src="princess.png">-->
 		<ul data-role="listview" data-inset="true">
 			<li><button id="PVP_btn">대항전</button></li>
-			<li><button id="evolution_calcButton">총력전</button></li>
-			<li><button id="exp_calcButton">기타정보</button></li>
+			<li><button id="raid_btn">총력전</button></li>
+			<li><button id="exp_calcButton">공략 및 정보</button></li>
 			<li><button id="update_listButton">서비스 업데이트 내역</button></li>
 		</ul>
 		<div>
@@ -55,7 +55,7 @@
  </body>
   	<script>
 		var PVP_btn = document.getElementById("PVP_btn");
-		var evolution_calcButton = document.getElementById("evolution_calcButton");
+		var raid_btn = document.getElementById("raid_btn");
 		var update_listButton = document.getElementById("update_listButton");
 		var exp_calcButton= document.getElementById("exp_calcButton");
 
@@ -64,15 +64,15 @@
 			window.location = 'https://kivotos-pvp.web.app';
 			//window.location = './event_calc_road_map';
 		})
-		evolution_calcButton.addEventListener("click", function(){
-			window.location = './evolution_calc';
+		raid_btn.addEventListener("click", function(){
+			alert('준비중입니다.');
+		})
+				exp_calcButton.addEventListener("click", function(){
+			alert('레벨이 71까지 오름에 따라 자료를 모으는 중입니다.');
+			//window.location = './exp_calc';
 		})
 		update_listButton.addEventListener("click", function(){
 			window.location = './update_list';
-		})
-		exp_calcButton.addEventListener("click", function(){
-			alert('레벨이 71까지 오름에 따라 자료를 모으는 중입니다.');
-			//window.location = './exp_calc';
 		})
 	</script>
 </html>  
