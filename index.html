@@ -37,6 +37,7 @@
 		<ul data-role="listview" data-inset="true">
 			<li><button id="PVP_btn">대항전</button></li>
 			<li><button id="raid_btn">총력전</button></li>
+			<li><button id="farming_btn">파밍 계산기</button></li>
 			<li><button id="bulletin board">공략 및 정보</button></li>
 			<li><button id="update_listButton">서비스 업데이트 내역</button></li>
 		</ul>
@@ -58,6 +59,8 @@
 		var raid_btn = document.getElementById("raid_btn");
 		var update_listButton = document.getElementById("update_listButton");
 		var bulletin_board= document.getElementById("bulletin board");
+		var farming_btn= document.getElementById("farming_btn");
+
 
 		PVP_btn.addEventListener("click", function(){
 			
@@ -67,10 +70,11 @@
 		raid_btn.addEventListener("click", function(){
 			alert('준비중입니다.');
 		})
-				bulletin_board.addEventListener("click", function(){
+		farming_btn.addEventListener("click", function(){
+			alert('준비중입니다.');
+		})
+		bulletin_board.addEventListener("click", function(){
 			window.location = 'https://kivotos-bulletin-board.web.app';
-			//
-			//window.location = './exp_calc';
 		})
 		update_listButton.addEventListener("click", function(){
 			window.location = './update_list';
