@@ -21,7 +21,7 @@
 			<div class="ui-body ui-body-a">
 				<label class="select"><h1>2021.03.28</h1></label>	
 				<label class="select">대항전 편성 등록 관련<br>
-					대항전 검색 등록에서 공격측과 방어측 중 승패의 기준을 공격측의 승패 여부 적시하지 않아 추가하였습니다.
+					대항전 검색 등록에서 공격측과 방어측 중 승패의 기준이 공격측인 것을 적시하지 않아 추가하였습니다.
 				</label>
 				<label class="select"><h1>2021.03.27</h1></label>	
 				<label class="select">블루아카이브 플레이에 도움이 되는 정보를 제공합니다.<br>
