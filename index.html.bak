@@ -75,8 +75,6 @@
 		})
 		bulletin_board.addEventListener("click", function(){
 			window.location = 'https://kivotos-bulletin-board.web.app';
-			//
-			//window.location = './exp_calc';
 		})
 		update_listButton.addEventListener("click", function(){
 			window.location = './update_list';
